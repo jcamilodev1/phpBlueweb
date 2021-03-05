@@ -1,0 +1,115 @@
+https://www.figma.com/file/Y5sKl8rNFLcnhthjQ64g0F/sistema_de_ventas?node-id=11%3A60
+se crea un elemento donde se guardan los elementos o las cosas de casa.
+Es solo un formulario que crea solo una tabla en la base de datos.
+En esa tabla se guardan los siguientes campos.
+
+id del producto este es incremental.
+id controlado
+Nombre del producto
+Cantidad del producto
+Id del producto contenedor. En este punto, lo que hay es un elemento seleccionable de los demas elementos creados. Donde se puede ver el nombre del producto y tambien su id.
+Descripción del producto.
+Precio del producto
+Activo o no Activo
+
+Tenemos las pantallas de leer, crear, borrar, actualizar un producto.
+
+
+Cuando se hace clic en uno de los elementos se va a una pantalla donde esta ese elemento. Su descripciòn y los elementos que son contenidos en ese elemento. Y luego en la tabla donde se ven los elementos que estan contenidos en ese elemento se puede clicar en un elemento y se puede ver los elementos que a su vez estan contenidos dentro de ese elemento.
+
+Lo primero es la tabla de leer, donde se ven todos los productos.
+Y un formulario para poder ver un producto en especifico a partir de un ID.
+
+Estructura de carpetas y archivos
+
+Un archivo para la conexión a la base de datos
+Un archivo para registrarse como usuario o crear cuenta
+
+Un archivo para proceso index
+Por cada carpeta de archivos, los archivos de proceso llevan el nombre del archivo y una coletilla que dice proceso, y todos los procesos estan en una carpeta que dice proceso
+Los estilos están dentro de una carpeta de estilos
+
+
+Tablas en la base de datos
+Se crea una tabla por cada usuario.
+Se crea una tabla usuario donde se tiene un id incremental el cual va creando una tabla por cada usuario
+Al crearse un grupo de productos, siempre se crea un producto con el nombre del grupo de productos
+Como se va a estar dentro de una tabla misma, se usará un seción para saber en que tabla se está, la pagina mis productos receteará el seción
+Al crear un grupo de productos, inmediatamente se crea el producto contenedor 
+Debo crear una tabla de mazos
+
+Al crear un elemento se llama principal.
+
+
+Estructura de archivos en frontend.
+
+Se divide en 2, sistema de login
+Sistema de anotacion
+
+sistemaLogin
+    login
+    cuentaCreada
+sistemaAdministrativo
+    mazoDeProductos
+    crearGrupoDeProductos
+    cambiarNombreDeProductos
+    cambiarNombreDeGrupoDeProductos
+sistemaTablasProductos
+    leer
+    crear
+    actualizar
+    nombreDeSubProducto
+    crearAdicional
+index - Crear cuenta o login.
+creandoCuenta - Pantalla de creando cuenta.
+= carpetaMisProductos
+    misProductos
+    nombreDelGrupoDeProductos
+    crearProducto
+    cambiarNombreDeProductosTabla
+    cambiarNombreDeProductos
+    Crear grupo de productos
+
+
+Databases
+    Tablas
+        usuarios
+            nombre
+            correo
+            id mazo - grupo de productos
+        productos
+            nombre del producto
+            cantidad del producto
+            producto contenedor
+            descripciòn del producto
+            precio del producto
+            activo o no activo
+        mazos
+            nombre de grupo de productos
+            descripción del producto
+
+
+
+id del producto este es incremental.
+id controlado
+Nombre del producto
+Cantidad del producto
+Id del producto contenedor. En este punto, lo que hay es un elemento seleccionable de los demas elementos creados. Donde se puede ver el nombre del producto y tambien su id.
+Descripción del producto.
+Precio del producto
+Activo o no Activo
+
+Tenemos las pantallas de leer, crear, borrar, actualizar un producto.
+
+
+
+Modelado de objetos.
+--------------------------------------
+El objeto Boton que se encuentra en mazo de productos.
+El objeto usuario.
+El objeto Producto.
+
+El objeto usuario solo tiene un dato nada mas.
+Mientras que el objeto mazo tiene muchos 
+
+En cada llamada a un metodo se especifica el ubicación del metodo y que hace, es más, se tiene una copia en comentario de como está escrito el metodo, para así, poder tener el codigo a la vista como si estubiera estructurado aunque no lo está.
